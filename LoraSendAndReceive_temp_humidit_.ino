@@ -35,10 +35,10 @@ void loop() {
   float humidity = dht.readHumidity();
 
   int battValue = analogRead(BATTERY_PIN);
-  float batteryVoltage = battValue * (3.3 / 1023.0) * 2.0;
+  float batteryVoltage = battValue * (3.3 / 4095.0) * 2.0;
 
   int windValue = analogRead(WIND_PIN);
-  float windVoltage = windValue * (3.3 / 1023.0);
+  float windVoltage = windValue * (3.3 / 4095.0;
   float windSpeed = (windVoltage / 3.3) * 30.0;
 
 
